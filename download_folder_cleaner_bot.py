@@ -3,12 +3,13 @@ import pathlib
 import shutil
 
 # Directories
-source_dir = pathlib.Path("C:\\Users\\wanok\\Downloads")
-images_folder = pathlib.Path("C:\\Users\\wanok\\Downloads\\images")
-videos_folder = pathlib.Path("C:\\Users\\wanok\\Downloads\\videos")
-audios_folder = pathlib.Path("C:\\Users\\wanok\\Downloads\\audios")
-documents_folder = pathlib.Path("C:\\Users\\wanok\\Downloads\\documents")
-applications_folder = pathlib.Path("C:\\Users\\wanok\\Downloads\\applications")
+download_folder = "C:\\Users\\wanok\\Downloads"
+source_dir = pathlib.Path(download_folder)
+images_folder = pathlib.Path(f"{download_folder}\\images")
+videos_folder = pathlib.Path(f"{download_folder}\\videos")
+audios_folder = pathlib.Path(f"{download_folder}\\audios")
+documents_folder = pathlib.Path(f"{download_folder}\\documents")
+applications_folder = pathlib.Path(f"{download_folder}\\applications")
 
 # supported image types
 image_extensions = [".jpg", ".jpeg", ".jpe", ".jif", ".jfif", ".jfi", ".png", ".gif", ".webp", ".tiff", ".tif", ".psd",
